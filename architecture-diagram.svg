@@ -1,0 +1,425 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860" font-family="'Courier New', monospace">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020d18"/>
+      <stop offset="100%" stop-color="#030f1e"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffaa00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#aa55ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#aa55ff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff3366" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff3366" stop-opacity="0.04"/>
+    </linearGradient>
+    <filter id="glow-cyan">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow-cyan" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00d4ff"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00ff88"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ffaa00"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff3366"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#aa55ff"/>
+    </marker>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.3" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="860" fill="url(#bgGrad)"/>
+  <rect width="1200" height="860" fill="url(#grid)"/>
+  <!-- Top glow -->
+  <ellipse cx="600" cy="-40" rx="500" ry="120" fill="#00d4ff" opacity="0.04"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- HEADER -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <text x="600" y="38" text-anchor="middle" font-size="22" font-weight="800" fill="#00d4ff" letter-spacing="6" filter="url(#glow-cyan)">OBSERVAAI — SYSTEM ARCHITECTURE</text>
+  <text x="600" y="56" text-anchor="middle" font-size="10" fill="#4a7a9b" letter-spacing="4">ANOMALY DETECTION &amp; PREDICTIVE ANALYTICS PLATFORM  |  MULTI-AGENT SYSTEM</text>
+  <line x1="60" y1="66" x2="1140" y2="66" stroke="#0d3050" stroke-width="1"/>
+
+  <!-- Layer headers -->
+  <text x="175" y="85" text-anchor="middle" font-size="9" fill="#1a5a8a" letter-spacing="3">PRESENTATION LAYER</text>
+  <text x="600" y="85" text-anchor="middle" font-size="9" fill="#1a5a8a" letter-spacing="3">APPLICATION LAYER</text>
+  <text x="1025" y="85" text-anchor="middle" font-size="9" fill="#1a5a8a" letter-spacing="3">INTELLIGENCE LAYER</text>
+  <line x1="345" y1="72" x2="345" y2="820" stroke="#0d3050" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="860" y1="72" x2="860" y2="820" stroke="#0d3050" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FRONTEND BOX -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="30" y="95" width="290" height="500" rx="10" fill="url(#cyanGrad)" stroke="#1a5a8a" stroke-width="1.5"/>
+  <text x="175" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#00d4ff" letter-spacing="2">⬡  REACT FRONTEND</text>
+  <line x1="50" y1="122" x2="300" y2="122" stroke="#1a5a8a" stroke-width="1"/>
+  <text x="175" y="137" text-anchor="middle" font-size="9" fill="#4a7a9b">Port 3000  |  Vite + React 18</text>
+
+  <!-- Pages -->
+  <text x="50" y="157" font-size="9" fill="#4a7a9b" letter-spacing="2">PAGES</text>
+  <rect x="50" y="163" width="250" height="28" rx="4" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="62" y="181" font-size="10" fill="#00d4ff">📊</text>
+  <text x="82" y="181" font-size="10" font-weight="600" fill="#b8ddf5">OverviewPage</text>
+  <text x="200" y="181" font-size="9" fill="#4a7a9b">KPIs · Gauges · Charts</text>
+
+  <rect x="50" y="196" width="250" height="28" rx="4" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="62" y="214" font-size="10" fill="#00ff88">📡</text>
+  <text x="82" y="214" font-size="10" font-weight="600" fill="#b8ddf5">ServicesTable</text>
+  <text x="200" y="214" font-size="9" fill="#4a7a9b">Live per-service metrics</text>
+
+  <rect x="50" y="229" width="250" height="28" rx="4" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="62" y="247" font-size="10" fill="#ff3366">⚡</text>
+  <text x="82" y="247" font-size="10" font-weight="600" fill="#b8ddf5">AnomalyPanel</text>
+  <text x="200" y="247" font-size="9" fill="#4a7a9b">Detect · Root cause · Fix</text>
+
+  <rect x="50" y="262" width="250" height="28" rx="4" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="62" y="280" font-size="10" fill="#aa55ff">🔮</text>
+  <text x="82" y="280" font-size="10" font-weight="600" fill="#b8ddf5">PredictionPanel</text>
+  <text x="200" y="280" font-size="9" fill="#4a7a9b">Forecast · Capacity plan</text>
+
+  <rect x="50" y="295" width="250" height="28" rx="4" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="62" y="313" font-size="10" fill="#ffaa00">🤖</text>
+  <text x="82" y="313" font-size="10" font-weight="600" fill="#b8ddf5">AgentsPanel</text>
+  <text x="200" y="313" font-size="9" fill="#4a7a9b">Registry · AI Console</text>
+
+  <!-- Hooks -->
+  <text x="50" y="345" font-size="9" fill="#4a7a9b" letter-spacing="2">HOOKS</text>
+  <rect x="50" y="351" width="118" height="26" rx="4" fill="#061525" stroke="#ffaa00" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="109" y="368" text-anchor="middle" font-size="9" fill="#ffaa00">useWebSocket</text>
+  <rect x="182" y="351" width="118" height="26" rx="4" fill="#061525" stroke="#ffaa00" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="241" y="368" text-anchor="middle" font-size="9" fill="#ffaa00">useAgentStatus</text>
+
+  <!-- Services -->
+  <text x="50" y="397" font-size="9" fill="#4a7a9b" letter-spacing="2">SERVICES</text>
+  <rect x="50" y="403" width="118" height="26" rx="4" fill="#061525" stroke="#aa55ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="109" y="420" text-anchor="middle" font-size="9" fill="#aa55ff">wsClient.js</text>
+  <rect x="182" y="403" width="118" height="26" rx="4" fill="#061525" stroke="#aa55ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="241" y="420" text-anchor="middle" font-size="9" fill="#aa55ff">api.js</text>
+
+  <!-- Store -->
+  <text x="50" y="449" font-size="9" fill="#4a7a9b" letter-spacing="2">STATE</text>
+  <rect x="50" y="455" width="250" height="26" rx="4" fill="#061525" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="175" y="472" text-anchor="middle" font-size="9" fill="#00d4ff">Zustand Store (useStore.js)</text>
+
+  <!-- Components -->
+  <text x="50" y="502" font-size="9" fill="#4a7a9b" letter-spacing="2">COMPONENTS</text>
+  <rect x="50" y="508" width="78" height="22" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="89" y="523" text-anchor="middle" font-size="8" fill="#b8ddf5">cards/</text>
+  <rect x="136" y="508" width="78" height="22" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="175" y="523" text-anchor="middle" font-size="8" fill="#b8ddf5">charts/</text>
+  <rect x="222" y="508" width="78" height="22" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="261" y="523" text-anchor="middle" font-size="8" fill="#b8ddf5">panels/</text>
+
+  <!-- Tech stack pills -->
+  <rect x="50" y="540" width="55" height="18" rx="9" fill="#00d4ff18" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="77" y="553" text-anchor="middle" font-size="8" fill="#00d4ff">React 18</text>
+  <rect x="112" y="540" width="50" height="18" rx="9" fill="#00d4ff18" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="137" y="553" text-anchor="middle" font-size="8" fill="#00d4ff">Zustand</text>
+  <rect x="169" y="540" width="56" height="18" rx="9" fill="#00d4ff18" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="197" y="553" text-anchor="middle" font-size="8" fill="#00d4ff">Recharts</text>
+  <rect x="232" y="540" width="36" height="18" rx="9" fill="#00d4ff18" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="250" y="553" text-anchor="middle" font-size="8" fill="#00d4ff">Vite</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- WEBSOCKET TRANSPORT (CENTER LEFT) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Bidirectional arrow lines -->
+  <!-- Metrics down (green) -->
+  <line x1="320" y1="240" x2="390" y2="240" stroke="#00ff88" stroke-width="1.5" marker-end="url(#arrow-green)" filter="url(#glow-green)"/>
+  <text x="355" y="233" text-anchor="middle" font-size="8" fill="#00ff88" letter-spacing="1">METRICS</text>
+  <text x="355" y="254" text-anchor="middle" font-size="7" fill="#00994d">every 2s</text>
+
+  <!-- Query up (amber) -->
+  <line x1="390" y1="310" x2="320" y2="310" stroke="#ffaa00" stroke-width="1.5" marker-end="url(#arrow-amber)"/>
+  <text x="355" y="303" text-anchor="middle" font-size="8" fill="#ffaa00" letter-spacing="1">QUERIES</text>
+  <text x="355" y="323" text-anchor="middle" font-size="7" fill="#996600">analyze · predict</text>
+
+  <!-- REST API arrows -->
+  <line x1="320" y1="450" x2="390" y2="450" stroke="#00d4ff" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-cyan)"/>
+  <text x="355" y="443" text-anchor="middle" font-size="8" fill="#007a99">REST API</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FASTAPI BACKEND BOX -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="390" y="95" width="460" height="660" rx="10" fill="url(#greenGrad)" stroke="#1a5a4a" stroke-width="1.5"/>
+  <text x="620" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#00ff88" letter-spacing="2">⚙  FASTAPI BACKEND</text>
+  <line x1="410" y1="122" x2="830" y2="122" stroke="#1a5a4a" stroke-width="1"/>
+  <text x="620" y="137" text-anchor="middle" font-size="9" fill="#4a7a9b">Port 8000  |  Python 3.11  |  Uvicorn ASGI</text>
+
+  <!-- main.py -->
+  <rect x="410" y="148" width="420" height="50" rx="6" fill="#061525" stroke="#0d3050" stroke-width="1"/>
+  <text x="620" y="168" text-anchor="middle" font-size="11" font-weight="700" fill="#b8ddf5">main.py — Entry Point</text>
+  <text x="620" y="184" text-anchor="middle" font-size="9" fill="#4a7a9b">WebSocket routing  ·  Lifespan hooks  ·  CORS middleware  ·  Background tasks</text>
+
+  <!-- Routers -->
+  <text x="420" y="216" font-size="9" fill="#4a7a9b" letter-spacing="2">REST ROUTERS</text>
+  <rect x="420" y="222" width="95" height="24" rx="4" fill="#061525" stroke="#007a99" stroke-width="1"/>
+  <text x="467" y="238" text-anchor="middle" font-size="9" fill="#00d4ff">/api/metrics</text>
+  <rect x="522" y="222" width="95" height="24" rx="4" fill="#061525" stroke="#007a99" stroke-width="1"/>
+  <text x="569" y="238" text-anchor="middle" font-size="9" fill="#00d4ff">/api/anomalies</text>
+  <rect x="624" y="222" width="105" height="24" rx="4" fill="#061525" stroke="#007a99" stroke-width="1"/>
+  <text x="676" y="238" text-anchor="middle" font-size="9" fill="#00d4ff">/api/predictions</text>
+  <rect x="736" y="222" width="94" height="24" rx="4" fill="#061525" stroke="#007a99" stroke-width="1"/>
+  <text x="783" y="238" text-anchor="middle" font-size="9" fill="#00d4ff">/api/agents</text>
+
+  <!-- WebSocket box -->
+  <rect x="420" y="258" width="420" height="38" rx="6" fill="#00d4ff12" stroke="#00d4ff" stroke-width="1.5" filter="url(#glow-cyan)"/>
+  <text x="620" y="273" text-anchor="middle" font-size="10" font-weight="700" fill="#00d4ff">⚡ WebSocket Endpoint  —  /ws/{client_id}</text>
+  <text x="620" y="288" text-anchor="middle" font-size="9" fill="#4a7a9b">ConnectionManager  ·  Broadcast  ·  Client registry  ·  Auto-reconnect</text>
+
+  <!-- Services -->
+  <text x="420" y="316" font-size="9" fill="#4a7a9b" letter-spacing="2">SERVICES</text>
+  <rect x="420" y="322" width="200" height="50" rx="5" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="520" y="339" text-anchor="middle" font-size="9" font-weight="700" fill="#b8ddf5">MetricsSimulator</text>
+  <text x="520" y="352" text-anchor="middle" font-size="8" fill="#4a7a9b">Diurnal patterns · Incident</text>
+  <text x="520" y="364" text-anchor="middle" font-size="8" fill="#4a7a9b">injection · 6 microservices</text>
+
+  <rect x="630" y="322" width="210" height="50" rx="5" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="735" y="339" text-anchor="middle" font-size="9" font-weight="700" fill="#b8ddf5">WebSocketManager</text>
+  <text x="735" y="352" text-anchor="middle" font-size="8" fill="#4a7a9b">Connection pool · Broadcast</text>
+  <text x="735" y="364" text-anchor="middle" font-size="8" fill="#4a7a9b">Unicast · Stale cleanup</text>
+
+  <!-- Models -->
+  <rect x="420" y="382" width="420" height="34" rx="5" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="620" y="395" text-anchor="middle" font-size="9" font-weight="700" fill="#b8ddf5">models/schemas.py — Pydantic v2</text>
+  <text x="620" y="408" text-anchor="middle" font-size="8" fill="#4a7a9b">ServiceMetrics · AnomalyAnalysisRequest · PredictionResponse · AgentInfo</text>
+
+  <!-- MCP ORCHESTRATOR -->
+  <rect x="420" y="428" width="420" height="82" rx="8" fill="#00d4ff0a" stroke="#00d4ff" stroke-width="2"/>
+  <text x="620" y="447" text-anchor="middle" font-size="11" font-weight="700" fill="#00d4ff" letter-spacing="1">MCP ORCHESTRATOR</text>
+  <text x="620" y="461" text-anchor="middle" font-size="9" fill="#4a7a9b">mcp/orchestrator.py  —  Model Context Protocol coordination</text>
+  <line x1="440" y1="466" x2="820" y2="466" stroke="#0d3050" stroke-width="1"/>
+  <text x="490" y="480" font-size="9" fill="#b8ddf5">analyze_anomaly()</text>
+  <text x="490" y="494" font-size="9" fill="#b8ddf5">predict_future()</text>
+  <text x="490" y="508" font-size="9" fill="#b8ddf5">stream_agent_response()</text>
+  <text x="660" y="480" font-size="9" fill="#4a7a9b">→ full agent pipeline</text>
+  <text x="660" y="494" font-size="9" fill="#4a7a9b">→ ARIMA + LLM enrichment</text>
+  <text x="660" y="508" font-size="9" fill="#4a7a9b">→ async generator (SSE)</text>
+
+  <!-- AGENTS SECTION -->
+  <text x="420" y="532" font-size="9" fill="#4a7a9b" letter-spacing="2">GOOGLE ADK SPECIALIST AGENTS</text>
+
+  <!-- Agent 1 -->
+  <rect x="420" y="538" width="165" height="60" rx="5" fill="#ff336612" stroke="#ff3366" stroke-width="1"/>
+  <text x="502" y="554" text-anchor="middle" font-size="9" font-weight="700" fill="#ff3366">⚡ AnomalyDetector</text>
+  <text x="502" y="567" text-anchor="middle" font-size="8" fill="#4a7a9b">Z-score analysis</text>
+  <text x="502" y="579" text-anchor="middle" font-size="8" fill="#4a7a9b">Dynamic baseline learning</text>
+  <text x="502" y="591" text-anchor="middle" font-size="8" fill="#4a7a9b">Severity classifier</text>
+
+  <!-- Agent 2 -->
+  <rect x="593" y="538" width="165" height="60" rx="5" fill="#aa55ff12" stroke="#aa55ff" stroke-width="1"/>
+  <text x="675" y="554" text-anchor="middle" font-size="9" font-weight="700" fill="#aa55ff">🔮 PredictorAgent</text>
+  <text x="675" y="567" text-anchor="middle" font-size="8" fill="#4a7a9b">Exp. smoothing (ARIMA)</text>
+  <text x="675" y="579" text-anchor="middle" font-size="8" fill="#4a7a9b">30-min horizon forecast</text>
+  <text x="675" y="591" text-anchor="middle" font-size="8" fill="#4a7a9b">Capacity planner</text>
+
+  <!-- Agent 3 -->
+  <rect x="766" y="538" width="74" height="60" rx="5" fill="#ffaa0012" stroke="#ffaa00" stroke-width="1"/>
+  <text x="803" y="554" text-anchor="middle" font-size="9" font-weight="700" fill="#ffaa00">🔍 Root</text>
+  <text x="803" y="566" text-anchor="middle" font-size="9" font-weight="700" fill="#ffaa00">Cause</text>
+  <text x="803" y="579" text-anchor="middle" font-size="8" fill="#4a7a9b">Dep. graph</text>
+  <text x="803" y="591" text-anchor="middle" font-size="8" fill="#4a7a9b">Pattern lib</text>
+
+  <!-- Agent 4 -->
+  <rect x="420" y="607" width="165" height="60" rx="5" fill="#00ff8812" stroke="#00ff88" stroke-width="1"/>
+  <text x="502" y="623" text-anchor="middle" font-size="9" font-weight="700" fill="#00ff88">🛡 MitigationAgent</text>
+  <text x="502" y="636" text-anchor="middle" font-size="8" fill="#4a7a9b">Runbook matching</text>
+  <text x="502" y="648" text-anchor="middle" font-size="8" fill="#4a7a9b">kubectl commands</text>
+  <text x="502" y="660" text-anchor="middle" font-size="8" fill="#4a7a9b">Auto-execution flag</text>
+
+  <!-- Agent 5 -->
+  <rect x="593" y="607" width="165" height="60" rx="5" fill="#00d4ff12" stroke="#00d4ff" stroke-width="1"/>
+  <text x="675" y="623" text-anchor="middle" font-size="9" font-weight="700" fill="#00d4ff">📡 DataCollector</text>
+  <text x="675" y="636" text-anchor="middle" font-size="8" fill="#4a7a9b">Metrics ingestion</text>
+  <text x="675" y="648" text-anchor="middle" font-size="8" fill="#4a7a9b">Normalisation</text>
+  <text x="675" y="660" text-anchor="middle" font-size="8" fill="#4a7a9b">Always-active agent</text>
+
+  <!-- base_agent -->
+  <rect x="766" y="607" width="74" height="60" rx="5" fill="#06152510" stroke="#1a3040" stroke-width="1"/>
+  <text x="803" y="625" text-anchor="middle" font-size="8" fill="#4a7a9b">base_</text>
+  <text x="803" y="637" text-anchor="middle" font-size="8" fill="#4a7a9b">agent.py</text>
+  <text x="803" y="650" text-anchor="middle" font-size="7" fill="#2a5070">AgentMsg</text>
+  <text x="803" y="662" text-anchor="middle" font-size="7" fill="#2a5070">BaseAgent</text>
+
+  <!-- utils -->
+  <rect x="420" y="678" width="420" height="28" rx="4" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="500" y="696" font-size="9" fill="#4a7a9b">utils/helpers.py</text>
+  <text x="640" y="696" font-size="9" fill="#2a5070">now_iso()  ·  safe_json_extract()  ·  clamp()</text>
+
+  <!-- Tech pills -->
+  <rect x="420" y="718" width="64" height="16" rx="8" fill="#00ff8818" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="452" y="730" text-anchor="middle" font-size="8" fill="#00ff88">FastAPI</text>
+  <rect x="491" y="718" width="64" height="16" rx="8" fill="#00ff8818" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="523" y="730" text-anchor="middle" font-size="8" fill="#00ff88">Uvicorn</text>
+  <rect x="562" y="718" width="68" height="16" rx="8" fill="#00ff8818" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="596" y="730" text-anchor="middle" font-size="8" fill="#00ff88">WebSockets</text>
+  <rect x="637" y="718" width="68" height="16" rx="8" fill="#00ff8818" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="671" y="730" text-anchor="middle" font-size="8" fill="#00ff88">Pydantic v2</text>
+  <rect x="712" y="718" width="70" height="16" rx="8" fill="#00ff8818" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="747" y="730" text-anchor="middle" font-size="8" fill="#00ff88">python-dotenv</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BACKEND → LLM ARROW -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <line x1="850" y1="470" x2="880" y2="470" stroke="#aa55ff" stroke-width="1.5" marker-end="url(#arrow-purple)" filter="url(#glow-cyan)"/>
+  <line x1="880" y1="320" x2="850" y2="320" stroke="#aa55ff" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+  <text x="865" y="400" text-anchor="middle" font-size="8" fill="#aa55ff" letter-spacing="1" writing-mode="tb" transform="rotate(0,865,400)">claude API</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- INTELLIGENCE LAYER -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="880" y="95" width="290" height="500" rx="10" fill="url(#purpleGrad)" stroke="#5a2a8a" stroke-width="1.5"/>
+  <text x="1025" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#aa55ff" letter-spacing="2">🧠  LLM INTELLIGENCE</text>
+  <line x1="900" y1="122" x2="1150" y2="122" stroke="#5a2a8a" stroke-width="1"/>
+  <text x="1025" y="137" text-anchor="middle" font-size="9" fill="#4a7a9b">Anthropic API  |  Claude Sonnet 4</text>
+
+  <!-- Model card -->
+  <rect x="900" y="148" width="250" height="70" rx="6" fill="#aa55ff15" stroke="#aa55ff" stroke-width="1.5"/>
+  <text x="1025" y="168" text-anchor="middle" font-size="10" font-weight="700" fill="#aa55ff">claude-sonnet-4</text>
+  <text x="1025" y="182" text-anchor="middle" font-size="9" fill="#4a7a9b">claude-sonnet-4-20250514</text>
+  <text x="1025" y="196" text-anchor="middle" font-size="9" fill="#4a7a9b">max_tokens: 2000</text>
+  <text x="1025" y="210" text-anchor="middle" font-size="9" fill="#4a7a9b">Streaming: ✓</text>
+
+  <!-- LLM Tasks -->
+  <text x="900" y="238" font-size="9" fill="#4a7a9b" letter-spacing="2">LLM TASKS</text>
+  <rect x="900" y="244" width="250" height="34" rx="5" fill="#061525" stroke="#5a2a8a" stroke-width="1"/>
+  <text x="900" y="258" font-size="14" fill="#ff3366" dx="10">⚡</text>
+  <text x="930" y="256" font-size="9" font-weight="700" fill="#b8ddf5">Anomaly Enrichment</text>
+  <text x="930" y="270" font-size="8" fill="#4a7a9b">Contextual analysis of agent pipeline output</text>
+
+  <rect x="900" y="284" width="250" height="34" rx="5" fill="#061525" stroke="#5a2a8a" stroke-width="1"/>
+  <text x="900" y="298" font-size="14" fill="#aa55ff" dx="10">🔮</text>
+  <text x="930" y="296" font-size="9" font-weight="700" fill="#b8ddf5">Prediction Context</text>
+  <text x="930" y="310" font-size="8" fill="#4a7a9b">LLM-enhanced forecasting narrative</text>
+
+  <rect x="900" y="324" width="250" height="34" rx="5" fill="#061525" stroke="#5a2a8a" stroke-width="1"/>
+  <text x="900" y="338" font-size="14" fill="#00d4ff" dx="10">💬</text>
+  <text x="930" y="336" font-size="9" font-weight="700" fill="#b8ddf5">Agent Chat (Streaming)</text>
+  <text x="930" y="350" font-size="8" fill="#4a7a9b">Natural language Q&amp;A via async generator</text>
+
+  <!-- Fallback -->
+  <rect x="900" y="374" width="250" height="44" rx="5" fill="#00ff8808" stroke="#00ff88" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1025" y="390" text-anchor="middle" font-size="9" font-weight="700" fill="#00ff88">Fallback Mode</text>
+  <text x="1025" y="404" text-anchor="middle" font-size="8" fill="#4a7a9b">No API key → deterministic</text>
+  <text x="1025" y="416" text-anchor="middle" font-size="8" fill="#4a7a9b">agent analysis (full functionality)</text>
+
+  <!-- MCP Protocol note -->
+  <rect x="900" y="430" width="250" height="55" rx="6" fill="#00d4ff08" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1025" y="448" text-anchor="middle" font-size="9" font-weight="700" fill="#00d4ff">MCP Protocol</text>
+  <text x="1025" y="461" text-anchor="middle" font-size="8" fill="#4a7a9b">Model Context Protocol</text>
+  <text x="1025" y="473" text-anchor="middle" font-size="8" fill="#4a7a9b">Structured agent message passing</text>
+  <text x="1025" y="485" text-anchor="middle" font-size="8" fill="#4a7a9b">AgentMessage dataclass routing</text>
+
+  <!-- Tech pills -->
+  <rect x="900" y="502" width="68" height="16" rx="8" fill="#aa55ff18" stroke="#aa55ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="934" y="514" text-anchor="middle" font-size="8" fill="#aa55ff">anthropic</text>
+  <rect x="975" y="502" width="68" height="16" rx="8" fill="#aa55ff18" stroke="#aa55ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1009" y="514" text-anchor="middle" font-size="8" fill="#aa55ff">AsyncClient</text>
+  <rect x="1050" y="502" width="68" height="16" rx="8" fill="#aa55ff18" stroke="#aa55ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1084" y="514" text-anchor="middle" font-size="8" fill="#aa55ff">Streaming</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BOTTOM ROW — Infrastructure & Data Flow -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <!-- Simulated Services -->
+  <rect x="30" y="615" width="290" height="180" rx="10" fill="#06152590" stroke="#0d3050" stroke-width="1"/>
+  <text x="175" y="634" text-anchor="middle" font-size="10" font-weight="700" fill="#4a7a9b" letter-spacing="2">SIMULATED MICROSERVICES</text>
+  <line x1="50" y1="640" x2="300" y2="640" stroke="#0d3050" stroke-width="1"/>
+  <rect x="50" y="648" width="108" height="20" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="104" y="662" text-anchor="middle" font-size="9" fill="#00ff88">● api-gateway</text>
+  <rect x="165" y="648" width="115" height="20" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="222" y="662" text-anchor="middle" font-size="9" fill="#00ff88">● auth-service</text>
+  <rect x="50" y="674" width="108" height="20" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="104" y="688" text-anchor="middle" font-size="9" fill="#00ff88">● user-service</text>
+  <rect x="165" y="674" width="115" height="20" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="222" y="688" text-anchor="middle" font-size="9" fill="#00ff88">● payment-service</text>
+  <rect x="50" y="700" width="118" height="20" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="109" y="714" text-anchor="middle" font-size="8" fill="#00ff88">● notification-svc</text>
+  <rect x="175" y="700" width="105" height="20" rx="3" fill="#061525" stroke="#1a3040" stroke-width="1"/>
+  <text x="227" y="714" text-anchor="middle" font-size="8" fill="#00ff88">● fraud-detection</text>
+  <text x="175" y="740" text-anchor="middle" font-size="8" fill="#2a5070">CPU · Memory · P99 · ErrorRate</text>
+  <text x="175" y="753" text-anchor="middle" font-size="8" fill="#2a5070">RPS · Throughput · QueueDepth</text>
+  <text x="175" y="766" text-anchor="middle" font-size="8" fill="#2a5070">Random incident injection ✓</text>
+  <line x1="320" y1="720" x2="390" y2="630" stroke="#00ff88" stroke-width="1" stroke-dasharray="3,4" marker-end="url(#arrow-green)"/>
+
+  <!-- Docker -->
+  <rect x="880" y="615" width="290" height="180" rx="10" fill="#06152590" stroke="#0d3050" stroke-width="1"/>
+  <text x="1025" y="634" text-anchor="middle" font-size="10" font-weight="700" fill="#4a7a9b" letter-spacing="2">DEPLOYMENT</text>
+  <line x1="900" y1="640" x2="1150" y2="640" stroke="#0d3050" stroke-width="1"/>
+  <text x="900" y="658" font-size="9" fill="#b8ddf5" dx="10">🐳 Docker Compose</text>
+  <text x="920" y="673" font-size="8" fill="#4a7a9b">observa-backend (port 8000)</text>
+  <text x="920" y="686" font-size="8" fill="#4a7a9b">observa-frontend (port 3000)</text>
+  <text x="920" y="699" font-size="8" fill="#4a7a9b">observa-net bridge network</text>
+  <text x="900" y="720" font-size="9" fill="#b8ddf5" dx="10">🔧 Manual Setup</text>
+  <text x="920" y="735" font-size="8" fill="#4a7a9b">pip install -r requirements.txt</text>
+  <text x="920" y="748" font-size="8" fill="#4a7a9b">npm install &amp;&amp; npm run dev</text>
+  <text x="900" y="768" font-size="9" fill="#b8ddf5" dx="10">🔑 Config</text>
+  <text x="920" y="783" font-size="8" fill="#4a7a9b">ANTHROPIC_API_KEY (optional)</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- AGENT PIPELINE FLOW (bottom center) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <rect x="390" y="755" width="460" height="80" rx="8" fill="#06152590" stroke="#0d3050" stroke-width="1"/>
+  <text x="620" y="773" text-anchor="middle" font-size="9" fill="#4a7a9b" letter-spacing="2">AGENT PIPELINE — ANOMALY ANALYSIS</text>
+
+  <!-- Pipeline flow boxes -->
+  <rect x="405" y="780" width="72" height="22" rx="3" fill="#00d4ff15" stroke="#00d4ff" stroke-width="1"/>
+  <text x="441" y="795" text-anchor="middle" font-size="8" fill="#00d4ff">DataCollect</text>
+
+  <line x1="477" y1="791" x2="492" y2="791" stroke="#00d4ff" stroke-width="1" marker-end="url(#arrow-cyan)"/>
+
+  <rect x="494" y="780" width="72" height="22" rx="3" fill="#ff336615" stroke="#ff3366" stroke-width="1"/>
+  <text x="530" y="795" text-anchor="middle" font-size="8" fill="#ff3366">AnomalyDet</text>
+
+  <line x1="566" y1="791" x2="581" y2="791" stroke="#ff3366" stroke-width="1" marker-end="url(#arrow-red)"/>
+
+  <rect x="583" y="780" width="72" height="22" rx="3" fill="#ffaa0015" stroke="#ffaa00" stroke-width="1"/>
+  <text x="619" y="795" text-anchor="middle" font-size="8" fill="#ffaa00">RootCause</text>
+
+  <line x1="655" y1="791" x2="670" y2="791" stroke="#ffaa00" stroke-width="1" marker-end="url(#arrow-amber)"/>
+
+  <rect x="672" y="780" width="72" height="22" rx="3" fill="#00ff8815" stroke="#00ff88" stroke-width="1"/>
+  <text x="708" y="795" text-anchor="middle" font-size="8" fill="#00ff88">Mitigation</text>
+
+  <line x1="744" y1="791" x2="759" y2="791" stroke="#00ff88" stroke-width="1" marker-end="url(#arrow-green)"/>
+
+  <rect x="761" y="780" width="72" height="22" rx="3" fill="#aa55ff15" stroke="#aa55ff" stroke-width="1"/>
+  <text x="797" y="795" text-anchor="middle" font-size="8" fill="#aa55ff">LLM Enrich</text>
+
+  <text x="620" y="825" text-anchor="middle" font-size="8" fill="#2a5070">Each agent passes AgentMessage → next → MCP Orchestrator assembles final response → WebSocket broadcast</text>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <line x1="60" y1="840" x2="1140" y2="840" stroke="#0d3050" stroke-width="1"/>
+  <text x="175" y="854" text-anchor="middle" font-size="8" fill="#1a4060">React 18 · Zustand · Recharts · Vite</text>
+  <text x="620" y="854" text-anchor="middle" font-size="8" fill="#1a4060">FastAPI · Python 3.11 · WebSockets · Pydantic v2 · Google ADK · MCP</text>
+  <text x="1025" y="854" text-anchor="middle" font-size="8" fill="#1a4060">Anthropic Claude claude-sonnet-4-20250514 · Docker</text>
+</svg>
